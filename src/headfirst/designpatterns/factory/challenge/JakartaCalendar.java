@@ -2,19 +2,20 @@ package headfirst.designpatterns.factory.challenge;
 
 import java.util.*;
 
-public class PacificCalendar extends Calendar {
+public class JakartaCalendar extends Calendar {
 
-	public PacificCalendar() {
+	public JakartaCalendar() {
 		// Calendar() constructor automatically calls createZone()
 	}
 
 	@Override
 	public Zone createZone() {
-		return new ZonePacific();
+		return new ZoneJakarta();
 	}
 
+	@Override
 	public void createCalendar(List<String> appointments) {
 		// make calendar from appointments
-		System.out.println("Making the Pacific calendar");
+		System.out.println("Making the Jakarta calendar");
 	}
 }

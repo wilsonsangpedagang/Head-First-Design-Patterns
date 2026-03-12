@@ -3,16 +3,16 @@ package headfirst.designpatterns.factory.challenge;
 public class ZoneFactory {
 	public Zone createZone(String zoneId) {
 		Zone zone = null;
-		if (zoneId == "US/Pacific") {
+		if (zoneId.equals("US/Pacific")) {
 			zone = new ZonePacific();
 		}
-		else if (zoneId == "US/Mountain") {
+		else if (zoneId.equals("US/Mountain")) {
 			zone = new ZoneMountain();
 		}
-		else if (zoneId == "US/Central") {
+		else if (zoneId.equals("US/Central")) {
 			zone = new ZoneCentral();
 		}
-		else if (zoneId == "US/Eastern") {
+		else if (zoneId.equals("US/Eastern")) {
 			zone = new ZoneEastern();
 		}
 		return zone;
